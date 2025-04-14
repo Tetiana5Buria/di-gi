@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap');
+
+.services {
+    background-color:rgb(var(--color-white));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.services-container {
+    width: 100%;
+    max-height: 547px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-position {
+    margin-top: 90px;
+    margin-left: 62px;
+
+}
+
+.content-position h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    color:rgb(var(--color-blue));
+    margin: 0;
+    margin-bottom: 76px;
+}
+
+.content-position h5 {
+    width: 393px;
+    height: 60px;
+    font-family: 'Roboto' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    color: #4A4A4A;
+
+}
+
+.services__horisontal-line {
+    margin: 0;
+    width: 100px;
+    height: 8px;
+    background-color: rgb(var(--color-blue));
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+ span {
+    width: 351px;
+    height: 68px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #797979;
+}
+
+
+/* grid */
+
+.services-section {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border-left: 1px solid rgb(var(--color-light-beige));
+    border-top: 1px solid rgb(var(--color-light-beige));
+    border-bottom: 1px solid rgb(var(--color-light-beige));
+    border-right: 1px solid rgb(var(--color-light-beige));
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    place-items: center;
+
+
+
+}
+
+.services-grid> :nth-child(1),
+.services-grid> :nth-child(2),
+.services-grid> :nth-child(3) {
+    border-right: 1px solid rgb(var(--color-light-beige));
+    position: relative;
+
+
+}
+
+
+.services-grid> :nth-child(5),
+.services-grid> :nth-child(6),
+.services-grid> :nth-child(7),
+.services-grid> :nth-child(8) {
+    border-right: 1px solid rgb(var(--color-light-beige));
+    border-top: 1px solid rgb(var(--color-light-beige));
+    position: relative;
+
+
+
+}
+
+.services__grid-container {
+    padding: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+
+
+}
+
+.item-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 4px solid transparent;
+
+}
+
+
+.item-container:hover {
+    border: 4px solid rgb(var(--color-blue));
+}
+
+
+.item-container img {
+    margin-top: 15px;
+    width: 64px;
+    height: 64px;
+}
+
+
+.item-container h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(var(--color-gray));
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+.item-container img,
+.item-container h6 {
+    transition: transform 0.5s ease;
+
+}
+
+.item-container:hover img,
+.item-container:hover h6 {
+    transform: translateY(-20px);
+
+}
+
+.item-container p {
+    text-align: center;
+
+}
+
+
+.services-hover-font {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(155, 155, 155, 1);
+    margin-top: 25px;
+}
+
+.services-more-font {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    color: rgb(var(--color-blue));
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.services-hover-font,
+.services-more-font {
+    opacity: 0;
+
+
+}
+
+.item-container:hover .services-hover-font,
+.item-container:hover .services-more-font {
+    opacity: 1;
+
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .services-container {
+        max-height: 912px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .content-position {
+        margin-top: 52px;
+        margin-left: 46px;
+
+    }
+
+    .content-position h2 {
+        margin-bottom: 61px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .services-section {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .services-container {
+        max-height: 1655px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .content-position {
+        margin-top: 50px;
+        margin-left: 46px;
+
+    }
+
+    .content-position h2 {
+        margin-bottom: 30px;
+
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+
+}
+
+
+@media only screen and (max-width: 640px) {
+    .services-container {
+        max-height: 1551px;
+
+    }
+
+    .content-position {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+
+    }
+
+    .content-position h2 {
+        margin-bottom: 20px;
+    }
+
+    .content-position h5 {
+        text-align: center;
+    }
+
+    .horisontal-line {
+        margin-top: 25px;
+
+    }
+
+    span {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .services-container {
+        max-height: 2800px;
+    }
+
+    .content-position {
+        margin-top: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .content-position h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .horisontal-line {
+        top: 52px;
+
+    }
+
+    .content-position h5 {
+        width: 280px;
+        font-size: 20px;
+        letter-spacing: 0px;
+    }
+    .horisontal-line {
+        margin-top: 30px;
+
+    }
+
+    span {
+        width: 250px;
+    height: 72px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+
+}
