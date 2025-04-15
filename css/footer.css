@@ -54,6 +54,7 @@
 }
 
 .footer__main h2 {
+ 
     width: 751px;
     height: 61px;
     margin-top: 158px;
@@ -218,8 +219,7 @@
 
 @media only screen and (max-width:768px) {
     .footer__main h2 {
-        width: 690px;
-        height: 66px;
+        flex-wrap: wrap;
         font-size: 32px;
         margin-top: 114px;
     }
