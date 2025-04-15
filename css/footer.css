@@ -268,7 +268,7 @@
     }
 }
 
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:639px) {
     .footer-container {
         height: 1141px;
         display: flex;
@@ -286,9 +286,11 @@
     
     }
     .footer__main h2 {
+        margin: 0 auto;
         width: 274px;
         height: 84px;
         font-size: 20px;
+        margin-top: 84px;
     }
     .grid-container {
         height: 100px;

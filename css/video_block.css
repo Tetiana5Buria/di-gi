@@ -221,7 +221,7 @@
 
 
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 639px) {
     .video__block-container {
         height: 844px;
     }

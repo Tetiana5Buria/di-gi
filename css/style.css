@@ -98,7 +98,7 @@ header {
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 639px) {
     .header-padding {
         padding-left: 17px;
         padding-right: 17px;
@@ -399,7 +399,8 @@ p {
     }
 
     .button-container {
-        width: 1024px;
+        max-width: 1024px;
+        width: 100%;
 
     }
 
@@ -470,7 +471,7 @@ p {
     }
 
     .button-container {
-        width: 768px;
+        max-width: 768px;
 
     }
 
@@ -540,7 +541,7 @@ p {
     }
 
     .button-container {
-        width: 640px;
+        max-width: 640px;
 
     }
 
@@ -566,7 +567,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 639px) {
     .main-background {
         height: 193px;
     }
@@ -609,7 +610,7 @@ p {
     }
 
     .button-container {
-        width: 320px;
+        max-width: 639px;
 
     }
 
@@ -809,7 +810,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 639px) {
     footer {
         height: 301px;
     }

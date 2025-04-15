@@ -307,7 +307,7 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 639px) {
     .services-container {
         max-height: 2800px;
     }

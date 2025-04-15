@@ -169,7 +169,7 @@
 
 }
 
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:639px) {
     .testimonial-block {
         height: 421px;
     }
