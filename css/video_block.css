@@ -86,8 +86,18 @@
     text-decoration: none;
     text-transform:uppercase;
 }
+@media only screen and (min-width: 1025px) {
+    .video__block-container {
+        width: 100%;
+    }
+    .video__block-title p {
+        width: auto;
+       display: flex;
+       flex-wrap: wrap;
+    }
+}
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     .video__block-container {
         height: 540px;
     }
@@ -130,7 +140,7 @@
    
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 641px) and (max-width: 768px)  {
     .video__block-container {
         height: 479px;
 
