@@ -103,8 +103,8 @@
     }
 
     .video__block-padding {
-        padding-left: 46px;
-        padding-right: 40px;
+        padding-left: 17px;
+        padding-right: 17px;
     }
 
     .video__block-flex {
@@ -128,6 +128,9 @@
     }
 
     .video__block-title p {
+     width: auto;
+       display: flex;
+       flex-wrap: wrap;
         font-size: 16px;
         margin-top: 19px;
     }
