@@ -347,10 +347,22 @@ p {
     top: 335px;
 
 }
-
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 1025px) {
+    /* Приклади стилів */
     .main-background {
+        width: 100%;
+       
+    }
+    .button-container{
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .main-background {
+    
         height: 618px;
     }
 
@@ -399,7 +411,7 @@ p {
     }
 
     .button-container {
-        max-width: 1024px;
+     
         width: 100%;
 
     }
@@ -431,7 +443,7 @@ p {
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 641px) and (max-width: 768px) {
     .main-background {
         height: 465px;
     }
@@ -501,7 +513,7 @@ p {
 
 
 
-@media only screen and (max-width: 640px) {
+@media only screen and  (max-width: 640px) {
     .main-background {
         height: 386px;
     }
