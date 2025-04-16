@@ -175,11 +175,16 @@
 
     .video__block-title p {
         margin-top: 15px;
-        width: 407px;
+        width: auto;
         font-size: 15px;
 
 
     }
+    .video__block-padding {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
 
     .video__block-button {
         transform: translateX(-20%);

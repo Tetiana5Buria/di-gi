@@ -50,13 +50,26 @@ $('.dot-1').click(function () {
     $(dot).addClass('active');
   }
   /* block 4 Services */
+  const scrollToSection = (buttonId, sectionId) => {
+    const button = document.getElementById(buttonId);
+    const section = document.getElementById(sectionId);
+  
+    if (button && section) {
+      button.addEventListener('click', (event) => {
+        if (button.tagName === 'A') {
+          event.preventDefault();
+        }
+        section.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+  };
+  
+  scrollToSection('detailsLink', 'services'); 
+  scrollToSection('learnMoreBtn', 'services'); 
+  
 
-const learnMoreBtn = document.getElementById('learnMoreBtn');
-const servicesSection = document.getElementById('services');
-
-learnMoreBtn.addEventListener('click', () => {
-  servicesSection.scrollIntoView({ behavior: 'smooth' });
-});
+  
+  
 /* block video block */
 const watchVideoBtn = document.getElementById('watchVideoBtn');
 const headerSection = document.getElementById('header');
@@ -72,19 +85,19 @@ watchVideoBtn.addEventListener('click', () => {
     $('.dot-1t').click(function () {
       $('.owl-carousel').trigger('prev.owl.carousel');
       setActiveDot(this);
-      changeCanvasColor('#FFFFF0'); // Колір для першої точки
+      changeCanvasColor('#FFFFF0'); 
     });
     
     $('.dot-2t').click(function () {
       $('.owl-carousel').trigger('next.owl.carousel');
       setActiveDot(this);
-      changeCanvasColor('#F1EFF2'); // Колір для другої точки
+      changeCanvasColor('#F1EFF2'); 
     });
     
     $('.dot-3t').click(function () {
       $('.owl-carousel').trigger('next.owl.carousel');
       setActiveDot(this);
-      changeCanvasColor('#F0F8FF'); // Колір для третьої точки
+      changeCanvasColor('#F0F8FF');
     });
     
     function setActiveDot(dot) {
