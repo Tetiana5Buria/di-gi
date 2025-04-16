@@ -513,7 +513,7 @@ p {
 
 
 
-@media only screen and  (min-width: 639px) and (max-width: 640px) {
+@media only screen and  (max-width: 640px) {
     .main-background {
         height: 386px;
     }
