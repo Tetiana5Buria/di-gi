@@ -1,5 +1,5 @@
 .video__block {
-    background-color:  rgb(var(--color-white));
+    background-color: rgb(var(--color-white));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,7 +64,7 @@
     color: rgba(155, 155, 155, 1);
 }
 
-.video__block-button button{
+.video__block-button button {
     max-width: 230px;
     height: 60px;
     background-color: rgb(var(--color-blue));
@@ -79,21 +79,23 @@
     font-size: 18px;
     line-height: 18px;
     padding: 21px 36px;
-    color:  rgb(var(--color-light-beige));
+    color: rgb(var(--color-light-beige));
     display: flex;
     justify-content: center;
     text-align: center;
     text-decoration: none;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
+
 @media only screen and (min-width: 1025px) {
     .video__block-container {
         width: 100%;
     }
+
     .video__block-title p {
         width: auto;
-       display: flex;
-       flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -128,22 +130,22 @@
     }
 
     .video__block-title p {
-     width: auto;
-       display: flex;
-       flex-wrap: wrap;
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
         font-size: 16px;
         margin-top: 19px;
     }
-    .video__block-button button{
-      
+
+    .video__block-button button {
+
         margin-top: 20px;
     }
 
 
-   
 }
 
-@media only screen and (min-width: 641px) and (max-width: 768px)  {
+@media only screen and (min-width: 641px) and (max-width: 768px) {
     .video__block-container {
         height: 479px;
 
@@ -180,6 +182,7 @@
 
 
     }
+
     .video__block-padding {
         padding-left: 17px;
         padding-right: 17px;
@@ -221,7 +224,6 @@
         margin-top: 40px;
         width: 518px;
         height: 490px;
-
     }
 
     .video__block-title p {
@@ -230,40 +232,39 @@
     }
 
     .video__block-button {
-   
+
         transform: translateX(5%);
     }
 }
-
-
-
-
 
 @media only screen and (max-width: 639px) {
     .video__block-container {
         height: 844px;
     }
+
     .video__block-image img {
         margin-top: 17px;
         width: 280px;
         height: 250px;
     }
+
     .video__block-title h3 {
         font-size: 24px;
     }
-    
+
     .video__horisontal-line {
-        margin-top: 20px;  
+        margin-top: 20px;
         width: 45px;
         height: 8px
-      
     }
+
     .video__block-title p {
         width: 280px;
         margin-top: 25px;
     }
-   /*  .video__block-button {
+
+    /*  .video__block-button {
         margin-top: 29px;
-       
+
     } */
-} 
+}
