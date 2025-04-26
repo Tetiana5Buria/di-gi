@@ -1,16 +1,16 @@
 $(document).ready(function () {
-   
+
 
 
 
     $('.owl-carousel').owlCarousel({
         loop: true,
-  
-    
         margin: 0,
-        nav: false, 
+        loop: true,
+        nav: true,
+        dots: true,
         center: true,
-    
+
         responsive: {
             0: {
                 items: 1
@@ -28,32 +28,37 @@ $(document).ready(function () {
     });
 
    /* dots bar block Intro */
-  
-$('.dot-1').click(function () {
-    $('.owl-carousel').trigger('prev.owl.carousel');
-    setActiveDot(this);
-  });
-  
-  $('.dot-2').click(function () {
-    $('.owl-carousel').trigger('next.owl.carousel');
-    setActiveDot(this);
-  });
-  
-  $('.dot-3').click(function () {
-    $('.owl-carousel').trigger('next.owl.carousel');
-    setActiveDot(this);
-  });
-  
- 
-  function setActiveDot(dot) {
-    $('.dot-1, .dot-2, .dot-3').removeClass('active');
-    $(dot).addClass('active');
+
+   function setActiveDotIntro(dot) {
+    $("[class^='dot-']").removeClass("active");
+    $(dot).addClass("active");
   }
+
+  let state = 0;
+
+  $(".pagination-button").on("click", "[class^='dot-']", function () {
+    const dotClass = $(this).attr("class");
+    const dotNumber = dotClass.split("-")[1];
+
+    if (dotNumber > state) {
+      $(".owl-carousel").trigger("next.owl.carousel");
+    } else if (dotNumber < state) {
+      $(".owl-carousel").trigger("prev.owl.carousel");
+    }
+    state = dotNumber;
+
+    setActiveDotIntro(this);
+  });
+
+
+
+
+
   /* block 4 Services */
   const scrollToSection = (buttonId, sectionId) => {
     const button = document.getElementById(buttonId);
     const section = document.getElementById(sectionId);
-  
+
     if (button && section) {
       button.addEventListener('click', (event) => {
         if (button.tagName === 'A') {
@@ -63,13 +68,13 @@ $('.dot-1').click(function () {
       });
     }
   };
-  
-  scrollToSection('detailsLink', 'services'); 
-  scrollToSection('learnMoreBtn', 'services'); 
-  
 
-  
-  
+  scrollToSection('detailsLink', 'services');
+  scrollToSection('learnMoreBtn', 'services');
+
+
+
+
 /* block video block */
 const watchVideoBtn = document.getElementById('watchVideoBtn');
 const headerSection = document.getElementById('header');
@@ -80,38 +85,38 @@ watchVideoBtn.addEventListener('click', () => {
 
     /* block 8 */
 
-    
-     
+
+
     $('.dot-1t').click(function () {
       $('.owl-carousel').trigger('prev.owl.carousel');
       setActiveDot(this);
-      changeCanvasColor('#FFFFF0'); 
+      changeCanvasColor('#FFFFF0');
     });
-    
+
     $('.dot-2t').click(function () {
       $('.owl-carousel').trigger('next.owl.carousel');
       setActiveDot(this);
-      changeCanvasColor('#F1EFF2'); 
+      changeCanvasColor('#F1EFF2');
     });
-    
+
     $('.dot-3t').click(function () {
       $('.owl-carousel').trigger('next.owl.carousel');
       setActiveDot(this);
       changeCanvasColor('#F0F8FF');
     });
-    
+
     function setActiveDot(dot) {
       $('.dot-1t, .dot-2t, .dot-3t').removeClass('active');
       $(dot).addClass('active');
     }
-    
+
     function changeCanvasColor(color) {
-      $('.testimonial-block ').css('background-color', color); 
+      $('.testimonial-block ').css('background-color', color);
     }
-    
+
 
     /* bkock 9 */
-  
+
   const backToTopBtn = document.getElementById('backToTopBtn');
 
 backToTopBtn.addEventListener('click', () => {
@@ -119,11 +124,11 @@ backToTopBtn.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
     behavior: 'smooth',
- 
+
   });
 });
 
-      
-       
+
+
       });
 

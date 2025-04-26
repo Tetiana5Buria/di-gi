@@ -122,12 +122,10 @@ header {
 .intro__container {
     overflow: hidden;
     margin: 0 auto;
-    
+
 }
 
-.background-img__1,
-.background-img__2,
-.background-img__3 {
+.background-img__1 {
     position: relative;
     width: 100%;
     height: 668px;
@@ -306,9 +304,7 @@ p {
 }
 
 
-.dot-1,
-.dot-2,
-.dot-3 {
+[class^='dot-'] {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -320,9 +316,7 @@ p {
 
 }
 
-.dot-1.active,
-.dot-2.active,
-.dot-3.active {
+[class^='dot-'].active {
     background-color: rgb(var(--color-blue));
     border-color: rgb(var(--color-white));
 }
@@ -347,13 +341,15 @@ p {
     top: 335px;
 
 }
+
 @media only screen and (min-width: 1025px) {
-  
+
     .main-background {
         width: 100%;
-       
+
     }
-    .button-container{
+
+    .button-container {
         width: 100%;
     }
 }
@@ -362,13 +358,11 @@ p {
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .main-background {
-    
+
         height: 618px;
     }
 
-    .background-img__1,
-    .background-img__2,
-    .background-img__3 {
+    .background-img {
 
         height: 618px;
 
@@ -411,7 +405,7 @@ p {
     }
 
     .button-container {
-     
+
         width: 100%;
 
     }
@@ -448,9 +442,7 @@ p {
         height: 465px;
     }
 
-    .background-img__1,
-    .background-img__2,
-    .background-img__3 {
+    .background-img {
 
         height: 465px;
 
@@ -483,7 +475,7 @@ p {
     }
 
     .button-container {
-       width: 100%;
+        width: 100%;
 
     }
 
@@ -513,14 +505,12 @@ p {
 
 
 
-@media only screen and  (max-width: 640px) {
+@media only screen and (max-width: 640px) {
     .main-background {
         height: 386px;
     }
 
-    .background-img__1,
-    .background-img__2,
-    .background-img__3 {
+    .background-img {
         width: 100%;
         height: 386px;
         background-size: cover;
@@ -584,13 +574,8 @@ p {
         height: 193px;
     }
 
-    .background-img__1,
-    .background-img__2,
-    .background-img__3 {
-
+    .background-img {
         height: 193px;
-
-
     }
 
     .banner-content {
@@ -635,14 +620,22 @@ p {
 
     }
 
-    .dot-1,
-    .dot-2,
-    .dot-3 {
+    [class^='dot-'] {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: rgb(var(--color-white));
+        border: 1px solid transparent;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+
+
+    }
+
+    [class^='dot-']
+     {
         width: 11px;
         height: 11px;
-
-
-
     }
 }
 
