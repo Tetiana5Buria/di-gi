@@ -7,8 +7,8 @@ $(document).ready(function () {
         loop: true,
         margin: 0,
         loop: true,
-        nav: true,
-        dots: true,
+        nav: false,
+        dots: false,
         center: true,
 
         responsive: {

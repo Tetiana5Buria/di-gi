@@ -611,7 +611,7 @@ p {
 
 /* promo */
 
-.bottom-box {
+.promo__bottom-box {
     height: 192px;
     background-color: rgb(var(--color-blue));
     display: flex;
@@ -752,19 +752,19 @@ p {
         gap: 34px;
     }
 
-    .bottom-box {
+    .promo__bottom-box {
         height: 160px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .bottom-box {
+    .promo__bottom-box{
         height: 187px;
     }
 }
 
 @media only screen and (max-width: 640px) {
-    .bottom-box {
+    .promo__bottom-box {
         height: 254px;
         text-align: center;
 
@@ -782,7 +782,7 @@ p {
 }
 
 @media only screen and (max-width: 639px) {
-    .bottom-box {
+    .promo__bottom-box {
         height: 301px;
     }
 
