@@ -752,19 +752,19 @@ p {
         gap: 34px;
     }
 
-    footer {
+    .bottom-box {
         height: 160px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    footer {
+    .bottom-box {
         height: 187px;
     }
 }
 
 @media only screen and (max-width: 640px) {
-    footer {
+    .bottom-box {
         height: 254px;
         text-align: center;
 
@@ -782,7 +782,7 @@ p {
 }
 
 @media only screen and (max-width: 639px) {
-    footer {
+    .bottom-box {
         height: 301px;
     }
 
