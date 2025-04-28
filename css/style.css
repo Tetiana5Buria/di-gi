@@ -644,7 +644,7 @@ p {
 
 /* promo */
 
-footer {
+.bottom-box {
     height: 192px;
     background-color: rgb(var(--color-blue));
     display: flex;

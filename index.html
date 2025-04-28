@@ -28,6 +28,9 @@
   <link rel="icon" type="image/x-icon" href="images/world.ico">
   <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
   <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="main.js"></script>
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
@@ -41,7 +44,6 @@
 </head>
 <body>
   <!--header -->
-
     <header id="header">
     <div class="container">
           <div class="header-padding ">
@@ -56,7 +58,6 @@
           </div>
     </div>
     </header>
-
 
   <!-- /*intro */ -->
    <main>
@@ -110,15 +111,9 @@
   </div>
 </section>
 
-
-
-
   <!-- promo -->
-  <section>
-    <footer>
-
+   <div class="bottom-box ">
         <div class=" container footer-padding ">
-          <!-- Text -->
           <div class="footer__space-between">
             <div class="footer-text">
               <h3 class="footer-text-header">
@@ -134,12 +129,11 @@
             </a>
           </div>
         </div>
+      </div>
 
-    </footer>
-  </section>
   <!-- services -->
-  <section id="services">
-    <div class="services">
+
+    <div class="services" id="services" >
       <div class="services-container">
         <div class="content-position">
           <div>
@@ -153,11 +147,11 @@
           </div>
           <div class="services__horisontal-line"></div>
           <div>
-            <span>
+            <p>
               Інтеграція бездоганного виробництва,<br />
               передових технологій та ретельного <br />
               вимірювання продуктивності
-            </span>
+            </p>
           </div>
         </div>
         <div class="services-section">
@@ -230,7 +224,7 @@
         </div>
       </div>
     </div>
-  </section>
+
   <!-- recent work -->
   <section>
     <div class="recent__work">
@@ -302,7 +296,7 @@
       </div>
   </section>
   <!-- video block -->
-  <section>
+
     <div class="video__block">
       <div class="video__block-container video__block-padding ">
         <div class="video__block-flex">
@@ -331,9 +325,9 @@
         </div>
       </div>
     </div>
-  </section>
+
   <!-- latest news -->
-  <section>
+
     <div class="latest__news-block">
       <div class="latest__news-container latest__news-padding">
         <div class="latest__news-title">
@@ -432,9 +426,9 @@
         </div>
       </div>
     </div>
-  </section>
+
   <!-- testimonial block 8 -->
-  <section>
+
     <div class="testimonial-block">
       <div class="testimonial-container">
         <img class="testimonial-quotes" src="./images/testimonial/quotes.svg" alt="quotes">
@@ -465,10 +459,10 @@
         </div>
       </div>
     </div>
-  </section>
+
 </main>
   <!-- footer block 9 -->
-  <section>
+  <footer>
     <div class="footer-block  ">
       <div class=" footer-container">
         <div class="footer-top"> </div>
@@ -507,19 +501,24 @@
             <div class="footer__content-grid footer__content-container">
               <div>
                 <h3>Контакти</h3>
-                <p>+380 555 55 66 <br> digi@gmail.com</p>
+                    <a href="tel:+3805555566">+380 555 55 66 </a> <br>
+                    <a href="mailto:digi@gmail.com">digi@gmail.com</a >
               </div>
               <div>
                 <h3>Адреса</h3>
-                <p>Пр. Науки 107<br>Kиїв / Україна</p>
+                <a href="#">Пр. Науки 107<br>Kиїв / Україна</a>
               </div>
               <div>
                 <h3>Допомога</h3>
-                <p>Як з нами звʼязатись?<br> Що таке діджитал?<br> Вартість послуг</p>
+                <a href="#">Як з нами звʼязатись? </a> <br>
+                <a href="#"> Що таке діджитал?<br>   </a>
+                <a href="#">Вартість послуг </a>
               </div>
               <div>
                 <h3>Меню</h3>
-                <p>Наші проєкти<br>Команда<br>Блог</p>
+                <a href="#">Наші проєкти<br></a>
+                <a href="#"> Команда<br>   </a>
+                <a href="#">Блог</a>
               </div>
             </div>
           </div>
@@ -535,9 +534,7 @@
         </div>
       </div>
     </div>
-  </section>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/owl.carousel.js"></script>
-  <script src="main.js"></script>
+  </footer>
+
 </body>
 </html>
