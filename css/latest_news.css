@@ -55,6 +55,8 @@
 
 }
 
+
+
 .masonry-item {
     position: relative;
     width: calc(100%- 70px) / 4;

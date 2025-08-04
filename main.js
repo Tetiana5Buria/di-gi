@@ -27,6 +27,26 @@ $(document).ready(function () {
 
   /* dots bar block Intro */
 
+  $(".dot-1").click(function () {
+    $(".owl-carousel").trigger("prev.owl.carousel");
+    setActiveDot(this);
+  });
+
+  $(".dot-2").click(function () {
+    $(".owl-carousel").trigger("next.owl.carousel");
+    setActiveDot(this);
+  });
+
+  $(".dot-3").click(function () {
+    $(".owl-carousel").trigger("next.owl.carousel");
+    setActiveDot(this);
+  });
+
+  function setActiveDot(dot) {
+    $(".dot-1, .dot-2, .dot-3").removeClass("active");
+    $(dot).addClass("active");
+  }
+
   function setActiveDotIntro(dot) {
     $("[class^='dot-']").removeClass("active");
     $(dot).addClass("active");
